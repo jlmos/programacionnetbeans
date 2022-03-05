@@ -1,0 +1,32 @@
+CUESTIONES PREVIAS
+a) a = 10, b = 10, c = 5, d = 2, e = 2.5
+b) -32, -35, 3, 29
+c) El programa multiplica dos números enteros en un tamaño de 32 bits.
+   Pero nos daría un error al no definir e importar nuestro teclado 
+   con la clave import java.util.Scanner; 
+   También si se introduce por equivocación una letra en vez de un número 
+   nos daría error, que deberíamos solucionarlo con un  
+ } catch (InputMismatchException ime) {
+System.out.println("Debe digitar solamente numeros enteros");
+            }
+d) Este programa divide dos números enteros. Pero no contempla que el 
+   resultado pueda ser con decimales. Solución tendríamos que introducir
+   un tipo primitivo con números decimales tipo float o double en vez de int.
+   Si introducimos en la variable "b" un cero también nos daría error.
+   Solución: 
+ catch (ArithmeticException ae) {
+System.out.println("No se puede dividir por cero!!!"); para que vuelva
+a introducir un número necesitariamos crear un bucle pero eso es para 
+otro café, que aún no lo domino.
+e) ( m + n / n), 
+   ( m + n ) / p) / ( p - r / s) esta última tb podría ser ( p - r) / s 
+y le daríamos prioridad a los paréntesis y después a la división.
+   ( c * r * t) / 100 ) / ( m2 + n2) / (p + q).
+f) a "a" se le asigna 3, a "b" se le asigna 2
+   c = a*b-b; el resultado de c es 4
+   d = b*b; el resultado de d es 4
+   a = b-a el resultado de a es -1
+   b++ el resultado de b es 2. hasta que se vuelva a usar la variable
+       que incrementaría 1, si fuera ++b, b valdría 3.
+   d+=2 sería d = d + 2. en d = b*b, d el resultado sería 6.
+   

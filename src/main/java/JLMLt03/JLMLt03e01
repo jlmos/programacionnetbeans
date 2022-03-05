@@ -1,0 +1,24 @@
+Cuestiones previas
+autor: jose luis mosquera losada
+fecha: 31-10-2021
+
+
+a) Empieza en uno y mientras i sea menor o igual a "10" lo incrementa en uno. salen 10 datos si se cumple la condición.
+b) Empieza en uno y mientras i sea menor o igual a "10" lo incrementa en dos. salen 5 datos si se cumple la condción.
+c) Empieza en uno y va hacia abajo, al ser i menor o igual a "10" siempre se va a cumplir y entraría en un bucle infinito.
+d) Empieza en 10 y mientras i sea mayor o igual a "1" lo decrementa en uno. salen 10 datos si se cumple la condición.
+e) Empieza en el valor de j y mientras i sea menor o igual a "k" lo incrementa en uno. salen 10 datos si se cumple 
+la condición.
+f) Empieza en el valor de j más uno y mientras i sea menor o igual a "j +5" lo incrementa en uno. salen 5 datos si 
+se cumple la condición.
+g) Empieza en el valor de k más uno y mientras i sea mayor o igual a "j" lo decrementa en uno. salen 10 datos si 
+se cumple la condición.
+h) Empieza en el valor de i=10 y siempre i vale 10 por lo que la condición de while siempre se cumple con un bucle
+infinito mostrando siempre 10.
+i) Empieza en el valor de i=10 y mientras i se mueva en el rango i>=j es decir(i>=10) y además i<=k es decir (i<=20)
+ i se incrementa en uno. salen 10 datos en incremento de uno en uno si se cumple la condición.
+j) Empieza en el valor de i=10 y es suficiente con que se cumpla una de las condiciones para que el bucle se repita;
+ en el 1er caso i>=j ya en su valor inicial es verdadera y ese bucle es infinito imprimiendo todos los múltiplos 
+ de 3: 3,6,9,12.....
+
+
