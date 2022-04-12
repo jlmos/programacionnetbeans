@@ -9,7 +9,6 @@ Llamar a consulta( por orden de llegada). Se cobra la tarifa correspondiente.
 Consultar total facturado hasta ese momento.
 autor: jose luis mosquera losada
 fecha: 2-02-2022 */
-
 package JLMLt09;
 
 import java.time.LocalDate;
@@ -30,6 +29,11 @@ public class PacienteRevision extends Paciente {
 
     @Override
     public double facturar() {
-        return YEARS.between(this.getFechaNacimiento(), LocalDate.now()) >= 65? 30: 50;
+        if (YEARS.between(this.getFechaNacimiento(), LocalDate.now()) >= 65) {
+            return 30;
+        } else {
+            return 50;
+
+        }
     }
 }

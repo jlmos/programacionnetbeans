@@ -12,9 +12,8 @@ fecha: 2-02-2022
  */
 package JLMLt09;
 
-public class PacienteConsulta extends Paciente {    
+public class PacienteConsulta1 extends Paciente1 {
 private String motivoConsulta;
-
     public String getMotivoConsulta() {
         return motivoConsulta;
     }

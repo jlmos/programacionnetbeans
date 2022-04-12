@@ -8,23 +8,31 @@ Programa con menú para: registrar llegada del paciente (xq viene y su datos)
 Llamar a consulta( por orden de llegada). Se cobra la tarifa correspondiente.
 Consultar total facturado hasta ese momento.
 autor: jose luis mosquera losada
-fecha: 2-02-2022
- */
+fecha: 2-02-2022 */
 package JLMLt09;
 
-public class PacienteConsulta extends Paciente {    
-private String motivoConsulta;
+import java.time.LocalDate;
+import static java.time.temporal.ChronoUnit.YEARS;
 
-    public String getMotivoConsulta() {
-        return motivoConsulta;
+public class PacienteRevision1 extends Paciente1 {
+
+    public LocalDate fechaUltimaVisita;
+
+    public LocalDate getFechaUltimaVisita() {
+        return fechaUltimaVisita;
     }
 
-    public void setMotivoConsulta(String motivoConsulta) {
-        this.motivoConsulta = motivoConsulta;
+    public void setFechaUltimaVisita(LocalDate fechaUltimaVisita) {
+        this.fechaUltimaVisita = fechaUltimaVisita;
+
     }
 
     @Override
     public double facturar() {
-        return 100;
+        if (YEARS.between(this.getFechaNacimiento(), LocalDate.now()) >= 65) {
+            return 30;
+        } else {
+            return 50;
+        }
     }
 }

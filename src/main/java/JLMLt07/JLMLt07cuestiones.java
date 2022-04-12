@@ -61,7 +61,7 @@ public class JLMLt07cuestiones {
     }
     
     /*
-    Apartado e
+    Apartado E
         java ej abc abc abc -> args contendría tres elementos, por lo tanto en el primer if saldría que es falso
         java ej abc abc -> No entraría en el if por ser dos argumentos. Tampocco entraría en el else if por ser dos argumentos iguales. El resultado sería true
         java ej ABc abc ->No entraría en el primer if por ser dos argumentos. Entraría en el else if por ser distintos los dos elementos y por lo tanto el resultado sería false

@@ -8,7 +8,7 @@ una línea solicitaremos nº de línea. Hacer tb programa con un menú para gest
 una factura (alta, añadir/eliminar líneas, mostrar factura)usar método toString
 para líneaFactura
 autor: jose luis mosquera losada
-fecha: 15-1-2022*/
+fecha: 10-04-2022*/
 package JLMLt07;
 
 import java.util.Scanner;

@@ -14,11 +14,11 @@ package JLMLt09;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class JLMLt09e09 {
+public class JLMLt09e091 {
 
     public static List<Paciente> pacientes = new ArrayList<>();
     public static double facturacion = 0;
@@ -30,22 +30,23 @@ public class JLMLt09e09 {
         do {
             opcion = pintarMenu();
             switch (opcion) {
+
                 case 1:
-                    System.out.println("De qué tipo de paciente se trata? Opciones:");
-                    System.out.println("1. Consulta");
-                    System.out.println("2. Receta");
-                    System.out.println("3. Revisión");
-                    System.out.print("Introduce un número (1-3): ");
+                    System.out.println("Qué tipo de paciente es: Opciones");
+                    System.out.println("1.Consulta");
+                    System.out.println("2.Receta");
+                    System.out.println("3.Revisión");
+                    System.out.println("Elige una opcion de 1-3");
                     int tipoPaciente = scanner.nextInt();
                     pacientes.add(obtenerPaciente(tipoPaciente));
                     break;
                 case 2:
                     if (pacientes.isEmpty()) {
-                        System.out.println("No quedan pacientes!");
+                        System.out.println("no hay pacientes");
                     } else {
                         Paciente paciente = pacientes.get(0);
                         facturacion += paciente.facturar();
-                        System.out.printf("Paciente atendido: %s (factura: %.2f)", paciente.getNombre(), paciente.facturar());
+                        System.out.printf("paciente atendido %s facturar %.2f)", paciente.getNombre(), paciente.facturar());
                         pacientes.remove(0);
                     }
                     break;
@@ -58,6 +59,7 @@ public class JLMLt09e09 {
                 default:
                     System.out.println("Opción incorrecta");
             }
+
         } while (!salir);
     }
     // se le piden sus datos

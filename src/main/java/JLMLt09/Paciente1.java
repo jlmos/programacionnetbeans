@@ -12,19 +12,27 @@ fecha: 2-02-2022
  */
 package JLMLt09;
 
-public class PacienteConsulta extends Paciente {    
-private String motivoConsulta;
+import java.time.LocalDate;
 
-    public String getMotivoConsulta() {
-        return motivoConsulta;
+public abstract class Paciente1 {
+
+    private String nombre;
+    private LocalDate fechaNacimiento;
+
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setMotivoConsulta(String motivoConsulta) {
-        this.motivoConsulta = motivoConsulta;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    @Override
-    public double facturar() {
-        return 100;
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
     }
+
+    public void setFechaNacimento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+public abstract double facturar();
 }

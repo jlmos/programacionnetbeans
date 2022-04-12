@@ -1,4 +1,4 @@
-/*Realizar un programa que tenga definido un Arrayy como variable global llamdo 
+/*Realizar un programa que tenga definido un Arrayy como variable global llamado 
 TemperaturaMeses, de 12 enteros, con las temperaturas medias de un lugar en cada 
 uno de los meses del año. Serán valores negativos o positivos. El programa tendrá
 diferentes funciones que realicen las siguientes tareas: llenar el Array, mostrar

@@ -73,6 +73,15 @@ public class JLMLt09e10 {
             int imp = parking.get(pos).salida();
             System.out.println("A pagar " + imp);
             parking.remove(pos);
+            /*teclado.nextLine();
+            System.out.println("introduce matricula");
+            String mat=teclado.nextLine();
+            int pos=parking.indexOf(new Coche(mat));
+            if(pos==-1){System.out.println("matricula erronea");return;}
+            int imp=parking.get(pos).salida();
+            System.out.println("el importe es:"+imp);
+            parking.remove(pos);
+*/
     }
     static void lista(){
         teclado.nextLine();

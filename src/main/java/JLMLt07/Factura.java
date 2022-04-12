@@ -6,7 +6,9 @@ y mostrar factura por consola. Línea de factura habrá que solicitar al usuario
 campo necesarios (descripción, precio unitario y cantidad de unidades. Para elimninar
 una línea solicitaremos nº de línea. Hacer tb programa con un menú para gestionar
 una factura (alta, añadir/eliminar líneas, mostrar factura)usar método toString
-para líneaFactura */
+para líneaFactura
+autor: jose luis mosquera losada
+fecha: 10-04-2022*/
 package JLMLt07;
 
 import java.time.LocalDate;
