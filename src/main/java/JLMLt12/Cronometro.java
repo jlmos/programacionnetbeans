@@ -1,8 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*A partir de la clase Cronometro que te proporciona el profesor, realiza un programa como el
+de la figura, con un contador de minutos, segundo y décimas de segundo que se puede arrancar
+(inicialmente a cero, esto es 00:00,0)
+• Emplea la clase swing.Timer.
+• Añade un método toString a la clase Cronómetro, que prepare el texto formateado a mostrar en el campo de texto (MM:SS,D)
+autor: jose luis mosquera losada
+fecha: 02-04-2022*/
 package JLMLt12;
 
    public class Cronometro extends Thread {

@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+/*Realizar un programa como el de la imagen dada, que permita convertir entre grados Celsius a Fahrenheit.
+Implementa una clase Conversor con métodos estáticos para pasar de Celsius a Fahrenheit y
+viceversa. Ponle título a la ventana.
+autor: jose luis mosquera losada
+fecha: 28-03-2022 */
 package JLMLt12;
 
-/**
- *
- * @author javi
- */
+
 public class Conversor {
     
     public static double celsiusAFahrenheit(double celsius) {

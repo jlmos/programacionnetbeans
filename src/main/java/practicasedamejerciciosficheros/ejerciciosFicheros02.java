@@ -1,6 +1,8 @@
-/*
- 
- */
+/*Hacer una versión del programa anterior empleando ahora la estructura try-with-resources. Usa
+también File.separator para componer la ruta del archivo que se llamará fich02.txt.
+autor: jose luis mosquera losada
+fecha: 13-04-2022*/
+
 package practicasedamejerciciosficheros;
 
 import java.io.BufferedWriter;

@@ -1,6 +1,7 @@
-/*
- 
- */
+/*Realizar un programa que muestre las parejas de temperatura-fecha/hora del ejercicio
+anterior. 
+autor: jose luis mosquera losada
+fecha: 13-04-2022 */
 package practicasedamejerciciosficheros;
 
 import java.io.BufferedInputStream;

@@ -1,17 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*Crear una función leerEntero(int max, int min) que solicite al usuario la entrada de un número
+entero y que valide que es un valor entero y que está comprendido entre los parámetros max y min
+(esto es, mayor o igual que min y menor o igual que max). El usuario deberá repetir la entrada de
+datos hasta que lo haga bien, devolviendo finalmente la función el valor introducido y validado.
+autor: jose luis mosquera losada
+fecha: 12-04-2022 */
+
 package JLMLt13;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
- *
- * @author ESTUDIOS
- */
+
 public class JLMLt13e06 {
 
     

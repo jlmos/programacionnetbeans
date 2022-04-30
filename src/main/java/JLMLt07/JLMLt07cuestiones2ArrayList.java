@@ -8,7 +8,7 @@ package JLMLt07;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class JLMLt07cuestiones2 {
+public class JLMLt07cuestiones2Arraylist {
 
 //  a)El contenido sería 2 elveado a uno ( que sería 2) hasta 2 elevado diez (1024).
     public static void main(String[] args) {

@@ -1,6 +1,8 @@
-/*
- 
- */
+/*Realizar un programa que lea el fichero fich04.txt línea a línea y lo muestre por pantalla, con
+el texto en mayúscula. Usar FileReader, try-with-resources y buffers. 
+autor: jose luis mosquera losada
+fecha: 13-04-2022 */
+
 package practicasedamejerciciosficheros;
 
 import java.io.BufferedReader;

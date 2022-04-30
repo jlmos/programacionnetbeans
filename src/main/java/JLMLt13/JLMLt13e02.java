@@ -1,3 +1,9 @@
+/*Hacer un programa que solicite al usuario dos números double y los intente sumar. En caso de
+que se introduzcan valores que no son enteros, por ejemplo, textos no numéricos, no provocará un
+error en tiempo de ejecución, simplemente informará de que se ha producido un error y no mostrará
+el resultado de la suma.
+autor: jose luis mosquera losada
+fecha: 12-04-2022*/
 package JLMLt13;
 
 import java.util.InputMismatchException;

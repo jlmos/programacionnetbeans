@@ -6,7 +6,7 @@ package JLMLt07;
 
 import java.util.Arrays;
 
-public class JLMLt07cuestiones {
+public class JLMLt07cuestionesArray {
     
     // En lugar de comprobar si los elementos del array son pares o impares, se estaba evaluando la variable x, que es el índice del bucle for. Hay que reemplazar x por a[x]
     public static void mainA(String[] args) {

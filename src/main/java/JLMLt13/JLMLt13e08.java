@@ -1,3 +1,12 @@
+/*Realiza una función/método que se le pase por parámetro una cadena que representa una
+dirección de correo electrónico. En caso de que la cadena no cumpla las condiciones sintácticas de
+un email, se generará una excepción de tipo: “Formato email inválido”. Los requisitos que tiene que
+tener una dirección de email podrían ser: número mínimo de caracteres=5, una arroba y al menos
+un punto después de la arroba. Hacer también un programa que llame a la función anterior y capture
+la excepción generada.
+autor: jose luis mosquera losada
+fecha: 12-04-2022*/
+
 package JLMLt13;
 
 public class JLMLt13e08 {

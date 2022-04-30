@@ -1,3 +1,14 @@
+/*Hacer un programa que, desde el main(), solicite al usuario que introduzca tres enteros,
+correspondientes a día, mes y año de una fecha. Realiza una función llamada validarFecha() que
+reciba esos tres valores e intentar construir una fecha con LocalDate.of devolviendo true si la fecha
+es válida o false si la fecha es inválida, es decir si se produce una excepción al construirla.
+• En caso de que los valores introducidos no sean enteros, el main() avisará de tal situación
+capturando la excepción en tipos de datos incorrectos al hacer el nextInt().
+• Si la función no es capaz de crear la fecha porque los valores no se corresponden con valores
+válidos, capturará esa excepción. Así pues, habrá un try…catch en el main() y otro en la función.
+autor: jose luis mosquera losada
+fecha: 12-04-2022*/
+
 package JLMLt13;
 
 import java.time.DateTimeException;

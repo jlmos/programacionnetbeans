@@ -1,6 +1,9 @@
-/*
- 
- */
+/*Haz una versión del programa anterior, que compruebe previamente si el fichero fich04.txt
+existe o no. En caso afirmativo hará una copia del archivo como fich04.bak y seguirá añadiendo las
+líneas sobre fich04.txt . 
+autor: jose luis mosquera losada
+fecha: 13-04-2022 */
+
 package practicasedamejerciciosficheros;
 
 import java.io.BufferedWriter;

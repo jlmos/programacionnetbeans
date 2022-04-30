@@ -1,3 +1,11 @@
+/*Hacer un programa que tenga definido un Array de 7 posiciones de double que representa la
+temperatura media en una ciudad durante una semana (puedes generar valores al azar entre 0 y 40
+para llenarlo). Se le solicitará al usuario que introduzca dos posiciones, y calculará la temperatura
+media entre esos días del año. Si los valores introducidos no son válidos, por estar fuera de los límites
+del array se capturará la excepción y la media será cero.
+autor: jose luis mosquera losada
+fecha: 12-04-2022*/
+
 package JLMLt13;
 
 import java.util.Arrays;

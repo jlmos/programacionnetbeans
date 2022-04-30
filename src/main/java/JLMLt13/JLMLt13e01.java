@@ -1,3 +1,8 @@
+/* Hacer un programa que solicite dos nºs enteros y los intente dividir (división entera,
+sin decimales). Si el denominador es cero, deberá capturar la excepción y decir que el
+resultado de la división es cero, sin que el programa pare su ejecución abruptamente.
+autor: jose luis mosquera losada
+fecha: 12-04-2022*/
 package JLMLt13;
 
 import java.util.Scanner;

@@ -1,6 +1,9 @@
-/*
- 
- */
+/*Realizar un programa que escriba distintas líneas de texto en un fichero llamado alumnos.csv,
+que contenga en cada línea: nombre del alumno, fecha de nacimiento, y notas de las tres
+evaluaciones (con dos decimales). Cada uno de los campos estará separado por un punto y coma. El
+programa finalizará cuando se introduzca ‘Z’ como nombre de alumno.
+autor: jose luis mosquera losada
+fecha: 13-04-2022 */
 package practicasedamejerciciosficheros;
 
 import java.io.BufferedWriter;

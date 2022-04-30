@@ -1,6 +1,11 @@
-/*
- 
- */
+/*Realizar un programa con un método al que se le pase una cadena con la ruta y nombre de
+un fichero. El método lo leerá y devolverá un array cuyo primer elemento contendrá el número de
+caracteres del fichero. El segundo elemento del array debe contar el número de líneas del fichero. El
+método devolverá null si no existe el fichero. El programa debe tener un main que llame al método
+creado pasándole como parámetro fich04.txt. 
+autor: jose luis mosquera losada
+fecha: 13-04-2022 */
+
 package practicasedamejerciciosficheros;
 
 import java.io.BufferedReader;

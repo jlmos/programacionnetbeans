@@ -4,7 +4,9 @@ a) Si, si introduzco un denominador cero me da un error aritmético
  y también si introduzco letras en vez de números me da un error de entrada de datos.
 b) no finaliza con error porque se está capturando la exceción correctamente. Al acceder al indice -1
 salta un excepción de tipo ArrayIndexOutOfBoundsException y se captura correctamente
-*/
+autor: jose luis mosquera losada
+fecha: 12-04-2022*/
+
 package JLMLt13;
 
 import java.util.InputMismatchException;

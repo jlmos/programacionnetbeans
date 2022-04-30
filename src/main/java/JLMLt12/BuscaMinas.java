@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*Ejercicio guiado: Buscaminas.
+A partir de la clase BuscaMinas que te ha entregado el profesor, elabora una aplicación gráfica
+para jugar al clásico juego del Buscaminas.
+autor: jose luis mosquera losada
+fecha: 1-04-2022 */
 package JLMLt12;
 
 import java.util.Random;
