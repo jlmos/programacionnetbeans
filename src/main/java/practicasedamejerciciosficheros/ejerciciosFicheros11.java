@@ -26,14 +26,16 @@ public class ejerciciosFicheros11 {
                 BufferedReader bfr = new BufferedReader(fr)) {
             while ((cadena = bfr.readLine()) != null) {
                cadena=cadena.replace(',','.');
+               String[] campos = cadena.split(";");
                Alumno alumno = new Alumno();
-               alumno.setNombre(cadena.substring(0,50));
-               alumno.setFecha(LocalDate.parse(cadena.substring (50,70).trim(), DateTimeFormatter.ofPattern("yyyyMMdd")));
-               alumno.setNota1(Float.parseFloat(cadena.substring(70,80)));
                alumno.setNota2(Float.parseFloat(cadena.substring(80,90)));
-               alumno.setNota3(Float.parseFloat(cadena.substring(90,100)));
-                          
-                alumnos.add (alumno);
+               alumno.setNombre(campos[0]);
+               alumno.setFecha(LocalDate.parse(campos[1], DateTimeFormatter.ofPattern("yyyyMMdd")));
+               alumno.setNota1(Float.parseFloat(campos[2]));
+               alumno.setNota2(Float.parseFloat(campos[3]));
+               alumno.setNota3(Float.parseFloat(campos[4]));
+
+               alumnos.add(alumno);
             }
         }
         int aprobados=0;
