@@ -4,7 +4,7 @@ líneas sobre fich04.txt .
 autor: jose luis mosquera losada
 fecha: 13-04-2022 */
 
-package practicasedamejerciciosficheros;
+package JLMLT14;
 
 import java.io.BufferedWriter;
 import java.io.File;

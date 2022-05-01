@@ -5,7 +5,7 @@ sistema con precisión de segundos y volverá a solicitar otra temperatura. Si s
 -999 indicará fin de programa. 
 autor: jose luis mosquera losada
 fecha: 13-04-2022 */
-package practicasedamejerciciosficheros;
+package JLMLT14;
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
@@ -34,7 +34,6 @@ public class ejerciciosFicheros12 {
             }
         } catch (IOException ex) {
             System.err.printf("Error:%s", ex.getMessage());
-
         }
     }
 }

@@ -4,7 +4,7 @@ evaluaciones (con dos decimales). Cada uno de los campos estará separado por un
 programa finalizará cuando se introduzca ‘Z’ como nombre de alumno.
 autor: jose luis mosquera losada
 fecha: 13-04-2022 */
-package practicasedamejerciciosficheros;
+package JLMLT14;
 
 import java.io.BufferedWriter;
 import java.io.File;

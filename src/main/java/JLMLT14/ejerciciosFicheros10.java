@@ -4,7 +4,7 @@ nota final se calcula redondeando un 20% de la primera evaluación más un 30% d
 50% de la tercera). Prueba a cargar el archivo alumnos.txt en una hoja de cálculo con LibreOfficeCalc. 
 autor: jose luis mosquera losada
 fecha: 13-04-2022 */
-package practicasedamejerciciosficheros;
+package JLMLT14;
 
 import java.io.BufferedReader;
 

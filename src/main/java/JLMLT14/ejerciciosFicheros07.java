@@ -6,7 +6,7 @@ creado pasándole como parámetro fich04.txt.
 autor: jose luis mosquera losada
 fecha: 13-04-2022 */
 
-package practicasedamejerciciosficheros;
+package JLMLT14;
 
 import java.io.BufferedReader;
 import java.io.File;

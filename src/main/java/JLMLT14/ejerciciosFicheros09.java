@@ -6,7 +6,7 @@ enteras, coma y dos posiciones decimales.
 autor: jose luis mosquera losada
 fecha: 13-04-2022 */
 
-package practicasedamejerciciosficheros;
+package JLMLT14;
 
 import java.io.BufferedWriter;
 import java.io.File;
