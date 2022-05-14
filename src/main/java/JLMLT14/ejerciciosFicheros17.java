@@ -1,4 +1,13 @@
-package JLMLT14;
+/*Realizar un programa que cree un ArrayList de 5 trabajadores (pueden ser Asalariados 
+o Consultores externos). Inserta objetos de ambas clases con unos valores cualesquiera 
+"a mano". A continuación, guarda los objetos serializados en un archivo llamado fich17.dat.
+copia ambas clases del ejercicios anteriores y su superclase (añadiendo_v2 a su nombre)
+para adapatarlas a este ejercicio.
+
+autor: jose luis mosquera losada
+fecha: 13-04-2022
+*/
+package JLMLt14;
 
 
 import JLMLt08.Asalariado;

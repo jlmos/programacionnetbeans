@@ -1,13 +1,20 @@
-package JLMLT14;
+/* Realiza un programa que lea un archivo como el del ejercicio anterior y muestre 
+por pantalla su contenido. Además, introducirá los objetos leídos en un ArrayList
+de tipo Trabajadores_v2.
+autor: jose luis mosquera losada
+fecha: 13-04-2022
+*/
+
+package JLMLt14;
 
 
 import java.io.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class ejerciciosFicheros18 {
 
     public static void main(String[] args) {
+        
         File file = new File("archivos" + File.separator + "fich17.dat");
         boolean eof = false;
         ArrayList<Trabajador_v2> trabajadores = new ArrayList<>();

@@ -6,7 +6,7 @@ se paga la hora extra en esemomento y calcula el salario final del empleado sien
 delas horas extras trabajadas.
 autor: jose luis mosquera losada
 fecha: 24-01-2022*/
-package JLMLT14;
+package JLMLt14;
 
 import java.time.LocalDate;
 

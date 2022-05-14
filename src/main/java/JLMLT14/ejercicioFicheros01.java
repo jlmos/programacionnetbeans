@@ -4,7 +4,7 @@ almacenado en la carpeta archivos creada previamente. No emplees la estructura t
 por lo que deberás hacer close() explícito del BufferedWriter dentro un try-catch.
 autor: jose luis mosquera losada
 fecha: 13-04-2022 */
-package JLMLT14;
+package JLMLt14;
 
 import java.io.BufferedWriter;
 import java.io.File;

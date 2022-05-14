@@ -1,3 +1,12 @@
+/*Realiza un programa que guarde un fichero similar al de las temperaturas del ejercicio 12 con 
+las temperaturas de todo un año (generar valores al azar para la temperatura, una temperatura por día,
+con valores entre 0 y 40 y la fecha en formato YYYYMMDD). El año puede ser una constante con un año 
+específico, por ejemplo 2021 o 2022. A continuación, se solicitará un día y mes del año al usuario y
+se obtendrá con acceso aleatorio (no secuencial) la temperatura de ese día.
+autor: jose luis mosquera losada
+fecha: 06-05-2022*/
+
+
 package JLMLT14;
 
 

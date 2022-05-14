@@ -5,7 +5,7 @@ método toString () y equals (), sabiendo que dos trabajadores son iguales si ti
 ‘id’.
 autor: jose luis mosquera losada
 fecha: 24-01-2022*/
-package JLMLT14;
+package JLMLt14;
 
 import java.io.Serializable;
 import java.time.LocalDate;

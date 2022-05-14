@@ -8,7 +8,7 @@ consultores en ese momento y calcula el salario final del consultor solo en func
 horas trabajadas (el salario base de estos trabajadores es cero).
 autor: jose luis mosquera losada
 fecha: 24-01-2022*/
-package JLMLT14;
+package JLMLt14;
 
 import java.time.LocalDate;
 

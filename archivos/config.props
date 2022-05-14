@@ -1,0 +1,5 @@
+#Fichero de config.
+#Sat May 14 13:05:57 CEST 2022
+CosteEstablecimientoLlamada=1.2
+CosteMinutoLlamada=0.2
+CosteConsumoDatos=0.3
