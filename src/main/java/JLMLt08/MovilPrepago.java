@@ -22,10 +22,6 @@ public long numeroMovil;
         this.saldo = saldo;
     }
 
-    public MovilPrepago(String string, String movil2, int i, float f, float f0, int i0, float f1, float f2) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     public void efectuarLlamada(int segundos) {
         saldo -= Math.round(
                 (costeEstablecLlamada + costeMinutoLlamada / 60f * segundos) * 100f) / 100f;
@@ -62,6 +58,9 @@ public long numeroMovil;
     public String toString() {
         return "MovilPrepago{" +
                 "numeroMovil=" + numeroMovil +
+                ", costeEstablecLlamada=" + costeEstablecLlamada +
+                ", costeMinutoLlamada=" + costeMinutoLlamada +
+                ", costeConsumoMB=" + costeConsumoMB +
                 ", saldo=" + saldo +
                 '}';
     }

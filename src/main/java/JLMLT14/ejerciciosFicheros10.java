@@ -6,6 +6,8 @@ autor: jose luis mosquera losada
 fecha: 13-04-2022 */
 package JLMLT14;
 
+import JLMLt14.Alumno;
+
 import java.io.BufferedReader;
 
 import java.io.File;
