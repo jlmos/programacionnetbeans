@@ -1,6 +1,4 @@
-/*
- 
- */
+/* */
 package JLMLt15;
 
 import java.util.Scanner;
