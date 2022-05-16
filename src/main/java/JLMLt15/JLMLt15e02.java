@@ -1,7 +1,5 @@
-/* Realizar un programa que contenga una LinkedList para almacenar matrículas de los 
-coches aparacados en un parking. Con estructura pila LIFO - Last Input, First Output
-con menú Aparcar, Desaparcar y mostrar lista de matrículas similar al ejercicio Tema7e6.
-usar los métodos que meten y sacan por el principio de la lista:addFirst y removeFirst
+/* Realizar una versión del ejercicio anterior, pero con los métodos que tiene
+LinkedList referidos específicamente a pilas (peek,pool,pop,push,etc.)
 autor: jose luis mosquera losada
 fecha: 15-05-2022*/
 
@@ -11,7 +9,7 @@ import java.util.LinkedList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class JLMLt15e01 {
+public class JLMLt15e02 {
 
     private static Scanner teclado = new Scanner(System.in);
     private static LinkedList<String> parking = new LinkedList<>();
@@ -38,7 +36,7 @@ public class JLMLt15e01 {
     private static void mostrarParking(){
         LinkedList<String> resultado = new LinkedList<>(parking); // Copio lista y trabajo sobre la copia
         while (resultado.size() < 10) {
-            resultado.addFirst("[VACIO]");
+            resultado.push("[VACIO]");
         }
         System.out.println("El estado actual del parking es:");
         System.out.println(String.join(" | ", resultado));
@@ -51,7 +49,7 @@ public class JLMLt15e01 {
         if(parking.size() >= 10) {
             System.out.println("Error. Parking lleno!");
         } else {
-            parking.addFirst(matricula);
+            parking.push(matricula);
             System.out.println("Coche aparcado con éxito. Quedan " + (MAX_PLAZAS - parking.size()) + " plazas");
         }
         System.out.println();
@@ -59,7 +57,7 @@ public class JLMLt15e01 {
 
     private static void desaparcar(){
         try {
-            String matricula = parking.removeFirst();
+            String matricula = parking.poll();
             System.out.println("Se ha desaparcado el coche " + matricula + ".  Quedan " + (MAX_PLAZAS - parking.size()) + " plazas");
         } catch (NoSuchElementException nsee) {
             System.out.println("Error. El parking está vacío.");
