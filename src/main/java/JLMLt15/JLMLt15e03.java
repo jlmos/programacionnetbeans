@@ -11,6 +11,7 @@ fecha: 15-05-2022*/
 package JLMLt15;
 
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -25,7 +26,7 @@ public class JLMLt15e03 {
         boolean salir =false;
         do{
             System.out.println("\n\n---GESTIÓN PERSONAS---");
-            System.out.println("a)Añadir personas\nb)Mostrar personas\nc)Salir");
+            System.out.println("a)Mostrar personas\nb)añadir personas\nc)Salir");
             char opcion =teclado.next().charAt(0);
             switch (opcion) {
                 case 'a': mostrarPersonas(); break;
@@ -37,18 +38,19 @@ public class JLMLt15e03 {
     }
 
     private static void mostrarPersonas(){
-        HashSet<Personas> resultado = new HashSet<>(); // Copio lista y trabajo sobre la copia
-        if (Personas.add(new Personas.add (jose,67099999,jjpp@gmail.com,10-03-1999)))
-                System.out.println("Añadido correctamente:");
-        else 
-        System.out.println("no se puede añadir. Repetido"));
-        double total=0;
-        for (Personas p : resultado) total +=p.Personas;
+        LinkedList<String> resultado = new LinkedList<>(personas); // Copio lista y trabajo sobre la copia
+        while (resultado.size() < 10) {
+            resultado.addFirst("[VACIO]");
+        }
+        System.out.println("El estado actual de la lista de personas es:");
+        System.out.println(String.join(" | ", resultado));
+        System.out.println();
         
     }
 
     private static void añadirPersonas(){
         System.out.print("Introduce persona: ");
+        
         String persona=teclado.next();
         if(Personas.size() >= 10) {
             System.out.println("Error. Parking lleno!");

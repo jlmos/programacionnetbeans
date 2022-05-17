@@ -23,11 +23,12 @@ public class Personas {
         this.telefono = telf;
         this.email = em;
         this.fechaDeNacimiento = fechaDN;
+               
     }
         
         @Override
         public int HashCode (){
-            int hash = 5;
+        int hash = 5;
             hash = 11 * hash + Objects.hashCode(this.nombre);
             return hash;
         }
