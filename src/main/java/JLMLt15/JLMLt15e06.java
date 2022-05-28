@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class JLMLt15e06 {
 
     static Scanner teclado;
-    static HashMap<String, Integer> plantilla;
+    static HashMap<String,Integer> plantilla;
     
 
     public static void main(String[] args) {
@@ -62,7 +62,7 @@ public class JLMLt15e06 {
         System.out.println("Introduce el nombre del jugador: ");
         String nombre = teclado.nextLine();
         int n = plantilla.get(nombre);
-        plantilla.remove(n);
+        plantilla.remove(nombre);
         System.out.println("Jugador eliminado.");
     }
 
@@ -76,12 +76,11 @@ public class JLMLt15e06 {
     public static void incrementarSalario() {
         System.out.println("Introduce el jugador para incrementar su salario: ");
         String nombre = teclado.nextLine();
-        for (String i : plantilla.keySet()) {
-            if (i.equals(nombre)) {
-                plantilla.put(i, plantilla.get(i) * (int) 1.1);
+        for (String i : plantilla.keySet()) 
+            if (i.equals(nombre)) 
+                plantilla.put(i,(int) (plantilla.get(i)  * 1.1));
                
             }
-            System.out.println(i);
         }
-    }
-}
+    
+

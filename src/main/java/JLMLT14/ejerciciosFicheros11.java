@@ -1,4 +1,4 @@
-/*Realizar un programa que lea el fichero alumnos.txt línea a línea y finalmente muestre la
+/*Realizar un programa que lea el fichero alumnos.csv línea a línea y finalmente muestre la
 cantidad de alumnos que tienen una nota final >=5 y el nombre del alumno con mejor nota. (La
 nota final se calcula redondeando un 20% de la primera evaluación más un 30% de la segunda más
 50% de la tercera). Prueba a cargar el archivo alumnos.txt en una hoja de cálculo con LibreOfficeCalc. 
