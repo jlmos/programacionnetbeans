@@ -13,28 +13,68 @@ import java.time.LocalDate;
  */
 public class Empleado {
 
-    Empleado(int parseInt, String parte, LocalDate parse, String parte0, float parseFloat) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private int id;
+    private String nombre;
+    private LocalDate fechaNacimiento;
+    private String categoria;
+    private float salario;
+
+    public Empleado(int id, String nombre, LocalDate fechaNacimiento, String categoria, float salario) {
+        this.id = id;
+        this.nombre = nombre;
+        this.fechaNacimiento = fechaNacimiento;
+        this.categoria = categoria;
+        this.salario = salario;
     }
 
-    int getId() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int getId() {
+        return id;
     }
 
-    String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setId(int id) {
+        this.id = id;
     }
 
-    int getSalario() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getNombre() {
+        return nombre;
     }
 
-    String getFechaNacimiento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    String getCategoria() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
     }
-    
+
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public float getSalario() {
+        return salario;
+    }
+
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", categoria='" + categoria + '\'' +
+                ", salario=" + salario +
+                '}';
+    }
 }

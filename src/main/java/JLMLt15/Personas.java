@@ -25,23 +25,17 @@ public class Personas {
         this.fechaDeNacimiento = fechaDN;
                
     }
-        
-        @Override
-        public int HashCode (){
-        int hash = 5;
-            hash = 11 * hash + Objects.hashCode(this.nombre);
-            return hash;
-        }
-        @Override
-        
-        public boolean equals (Object obj){
-        if (this == obj) return true;
-        if (obj == null) retrun false;
-        if (getClass( != obj.getClass()) return false);
-        final Personas other = (Personas) obj;
-        if (! objects.equals (this..nombre, other.nombre)) return false;
-        return true;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Personas personas = (Personas) o;
+        return Objects.equals(nombre, personas.nombre);
     }
-    
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nombre);
     }
+}
 
