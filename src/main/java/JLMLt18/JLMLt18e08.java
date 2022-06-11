@@ -1,4 +1,4 @@
-/*18.8. Partiendo de la clase Empleado definida previamente, realiza un programa con un main que
+/* Partiendo de la clase Empleado definida previamente, realiza un programa con un main que
 tenga dos métodos o funciones: el primer método leerá¡ el fichero csv llamado empleados.csv
 proporcionado por el profesor y que contiene una li­nea por cada empleado con la siguiente
 estructura: id ; nombre ; fechaNacimiento ; categoria ; salario
@@ -37,7 +37,7 @@ static HashSet<Empleado> listaEmpleados;
         teclado = new Scanner(System.in);
         listaEmpleados = new HashSet<>();
 
-        File f = new File("archivos"+File.separator+"empleados.csv");
+        File f = new File("archivos"+File.separator+"empleado.csv");
         String cadena;
         try (FileInputStream fis = new FileInputStream(f);
                 InputStreamReader isr = new InputStreamReader(fis, "UTF-8"); //"ISO-8859-1"
@@ -89,7 +89,7 @@ static HashSet<Empleado> listaEmpleados;
                 }
             }
         } catch (SQLException e) {
-            System.out.println("CÃ³digo de Error:" + e.getErrorCode()
+            System.out.println("Código de Error:" + e.getErrorCode()
                     + "\nSLQState:" + e.getSQLState()
                     + "\nMensaje:" + e.getMessage());
         }

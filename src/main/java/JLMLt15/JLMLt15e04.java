@@ -1,23 +1,18 @@
-/* Realizar un programa que cree un conjunto HashSet que almacene la lista de personas
-que van a una fiesta(de una persona sabemos su nombre, teléfono, email y fecha de nacimiento).
-Crea en un archivo aparte la clase Persona con los atributos y métodos que necesites. En el
-programa introduce "a mano" unas cuantas personas, y luego muestre la edad media y el nombre del
-mayor (también puedes crear un menú con la opción de añadir persona y mostrar lista)
-   - hacer la inserción de una persona repetida y ver que ocurre. 
-   - Muestra todos los valores almacenados en HashSet ¿tienen algún orden?
+/* Repite ejercicio anterior con un LikedHashSet. Que ha cambiado.
 autor: jose luis mosquera losada
-fecha: 15-05-2022 */
-/* mismo nombre y telefono no inserta a la persona y los datos van en orden de insercion */
+fecha: 25-05-2022 */
+/* mismo nombre y telefono no inserta a la persona y los datos 
+están enlazados entre sí según el orden de inserción*/
 package JLMLt15;
 
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
-public class JLMLt15e03 {
+public class JLMLt15e04 {
 
-    public static void main(String[] args) {
-    
-        HashSet <Persona> fiesta = new HashSet<>();
+       public static void main(String[] args) {
+                
+        LinkedHashSet <Persona> fiesta = new LinkedHashSet<>();
         String entrada,nombre,telefono,email,fechaNacimiento;
         int opcion;
         boolean salir = false;
@@ -27,9 +22,9 @@ public class JLMLt15e03 {
         try {
             while (!salir) {
                 System.out.println("Menú de opciones: ");
-                System.out.println("1 Apuntar persona");
-                System.out.println("2 Mostrar lista");
-                System.out.println("-1 Salir");
+                System.out.println("(1) Añadir persona");
+                System.out.println("(2) Mostrar lista");
+                System.out.println("(-1) Salir");
                 System.out.println("Escoge una opcion: ");
                 entrada = teclado.nextLine();
                 opcion = Integer.parseInt(entrada);
@@ -67,6 +62,7 @@ public class JLMLt15e03 {
         }
     
 }
+
     
               
         

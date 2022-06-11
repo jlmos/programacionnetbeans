@@ -36,7 +36,7 @@ public class JLMLt15e01 {
     }
 
     private static void mostrarParking(){
-        LinkedList<String> resultado = new LinkedList<>(parking); // Copio lista y trabajo sobre la copia
+        LinkedList<String> resultado = new LinkedList<>(parking); 
         while (resultado.size() < 10) {
             resultado.addFirst("[VACIO]");
         }
