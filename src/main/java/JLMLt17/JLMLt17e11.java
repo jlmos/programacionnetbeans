@@ -1,7 +1,7 @@
 /* Modificar el archivo XML 'librería.xml' pasando el alto y  el ancho a pulgadas.
 Guardarlo con el nombre 'libreríaPulgadas.xml'
 autor: jose luis mosquera losada
-fecha: 07-06-2022 */
+fecha: 11-06-2022 */
 
 package JLMLt17;
 

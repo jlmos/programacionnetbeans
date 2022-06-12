@@ -2,7 +2,7 @@
 Al usuario se le dirá el título del libro y él introducirá el nombre de la editorial. Guarda el 
 archivo con el nombre "libreríaconEditorial.xml'.
 autor: jose luis mosquera losada
-fecha: 07-06-2022 */
+fecha: 11-06-2022 */
 
 package JLMLt17;
 

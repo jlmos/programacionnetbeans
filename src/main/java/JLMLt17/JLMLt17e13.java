@@ -1,7 +1,7 @@
 /* Modificar el archivo XML 'librería.xml' eliminando las etiquetas 'isbn', 'dimensiones',
 'temática' y 'precio'.Guárdarlo con el nombre 'libreríaResumen.xml'.
 autor: jose luis mosquera losada
-fecha: 07-06-2022 */
+fecha: 11-06-2022 */
 
 package JLMLt17;
 

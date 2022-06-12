@@ -2,7 +2,7 @@
 y elementos hijo de tipo texto como los que muestra la siguiente figura. No hace falta
 que el usuario introduzca los valores, puedes meterlos en el código "a mano"
 autor: jose luis mosquera losada
-fecha: 07-06-2022 */
+fecha: 11-06-2022 */
 
 package JLMLt17;
 
