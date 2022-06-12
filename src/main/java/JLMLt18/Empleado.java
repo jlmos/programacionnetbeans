@@ -27,8 +27,8 @@ public class Empleado {
         this.salario = salario;
     }
 
-    Empleado() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Empleado() {
+
     }
 
     public int getId() {

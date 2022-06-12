@@ -16,42 +16,36 @@ public class JLMLt18e05 {
 
     
     public static void main(String[] args) {
-      
-        final String DDBB = "jdbc:mysql://localhost:3306/empresa?useUnicode=true&useJDBCCompliantTimezoneShif=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-        final String USER = "root";
-        final String PASSWORD = "pepe";
-        final String CONSULTA = "INSERT INTO empleado (id, nombre, fechaNacimiento, categoria, salario) VALUES (?,?,?,?,?)";
-        Scanner teclado = new Scanner(System.in);
-        String id, nombre, fecha, categoria, salario, salir;
 
-        try ( Connection conexion = DriverManager.getConnection(DDBB, USER, PASSWORD)) {
+        final String CONSULTA = "INSERT INTO empleado (id, nombre, fechaNacimiento, categoria, salario) VALUES (?,?,?,?,?)";
+        Scanner scanner = new Scanner(System.in);
+
+        try ( Connection conexion = DriverManager.getConnection(Constantes.BDURL, Constantes.USER, Constantes.PASS)) {
             PreparedStatement ps = conexion.prepareStatement(CONSULTA);
-            salir = "";
+            boolean continuar;
             do {
                 System.out.println("Introduce el id: ");
-                id = teclado.nextLine();
+                String id = scanner.nextLine();
                 ps.setString (1, id);
                 System.out.println("Introduce el nombre: ");
-                nombre = teclado.nextLine();
+                String nombre = scanner.nextLine();
                 ps.setString (2, nombre); 
                 System.out.println("Introduce la fecha aaaa-mm-dd: ");
-                fecha = teclado.nextLine();
+                String fecha = scanner.nextLine();
                 ps.setString (3, fecha); 
                 System.out.println("Introduce categoria: ");
-                categoria = teclado.nextLine();
+                String categoria = scanner.nextLine();
                 ps.setString (4, categoria); 
                 System.out.println("Introduce el salario: ");
-                salario = teclado.nextLine();
+                String salario = scanner.nextLine();
                 ps.setString (5, salario);
                 int cantFilas = ps.executeUpdate(); 
                 System.out.println( cantFilas + " fila/s insertadas");
-                System.out.println("¿Continuar si/no? ");
-                salir = teclado.nextLine();
-            } while (!salir.equals("no"));
+                System.out.println("¿Continuar S/N? ");
+                continuar = scanner.nextLine().equalsIgnoreCase("S");
+            } while (continuar);
         } catch (SQLException e) {
-            System.out.println("Código de Error: " + e.getErrorCode()
-                    + "\nSLQState: " + e.getSQLState()
-                    + "\nMensaje: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }

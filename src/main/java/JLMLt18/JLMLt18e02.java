@@ -16,27 +16,23 @@ public class JLMLt18e02 {
 
     
     public static void main(String[] args) {
-      
-       final String DDBB = "jdbc:mysql://localhost:3306/empresa?useUnicode=true&useJDBCCompliantTimezoneShif=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-        final String USER = "root";
-        final String PASSWORD = "pepe";
+
         final String CONSULTA = "SELECT nombre, fechaNacimiento FROM empleado WHERE fechaNacimiento > ?";
-        Scanner teclado = new Scanner(System.in);
-        String fecha;
-        
-        try ( Connection conexion = DriverManager.getConnection(DDBB, USER, PASSWORD);
-            PreparedStatement ps = conexion.prepareStatement(CONSULTA)){
+        Scanner scanner = new Scanner(System.in);
+
+        try (
+            Connection conexion = DriverManager.getConnection(Constantes.BDURL, Constantes.USER, Constantes.PASS);
+            PreparedStatement ps = conexion.prepareStatement(CONSULTA)
+        ){
             System.out.println("Introduce la fecha aaaa-mm-dd : ");
-            fecha = teclado.next();            
-            ps.setString(1, fecha);
+            String date = scanner.next();
+            ps.setString(1, date);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 System.out.println("Nombre: " + rs.getString(1) + "    Fecha de nacimiento: " + rs.getString(2));
             }
         } catch (SQLException e) {
-            System.out.println("Códdigo de Error: " + e.getErrorCode()
-                    + "\nSLQState: " + e.getSQLState()
-                    + "\nMensaje: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }

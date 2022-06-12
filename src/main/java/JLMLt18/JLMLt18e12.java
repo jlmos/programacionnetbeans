@@ -4,6 +4,7 @@ autor: jose luis mosquera losada
 fecha: 6-06-2022 */
 package JLMLt18;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,16 +17,14 @@ public class JLMLt18e12 {
 
         final String CONSULTA = "SELECT nombre FROM empleado";
         
-        try ( Connection conexion = DriverManager.getConnection("jdbc:sqlite:.\\archivos\\empresa.db");
+        try (Connection conexion = DriverManager.getConnection("jdbc:sqlite:archivos" + File.separator + "empresa.db");
             PreparedStatement ps = conexion.prepareStatement(CONSULTA)){
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 System.out.println("Empleado " + rs.getRow() + " nombre: " + rs.getString(1));
             }
         } catch (SQLException e) {
-            System.out.println("Código de Error: " + e.getErrorCode()
-                    + "\nSLQState: " + e.getSQLState()
-                    + "\nMensaje: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }

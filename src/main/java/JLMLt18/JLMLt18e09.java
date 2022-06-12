@@ -15,12 +15,9 @@ public class JLMLt18e09 {
 
     public static void main(String[] args) {
 
-        final String DDBB = "jdbc:mysql://localhost:3306/empresa?useUnicode=true&useJDBCCompliantTimezoneShif=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-        final String USER = "root";
-        final String PASSWORD = "pepe";
         final String CONSULTA = "SELECT * FROM empleado";
 
-        try (Connection conexion = DriverManager.getConnection(DDBB, USER, PASSWORD);
+        try (Connection conexion = DriverManager.getConnection(Constantes.BDURL, Constantes.USER, Constantes.PASS);
                 PreparedStatement ps = conexion.prepareStatement(CONSULTA, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE)) {
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
@@ -30,9 +27,7 @@ public class JLMLt18e09 {
                 }
             }
         } catch (SQLException e) {
-            System.out.println("Código de Error: " + e.getErrorCode()
-                    + "\nSLQState: " + e.getSQLState()
-                    + "\nMensaje: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }

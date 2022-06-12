@@ -1,7 +1,7 @@
 /*Crear una clase llamada Empleado cuyos atributos privados son los campos de la 
 tabla 'Empleado', añádele un constructor con todos los campos, getters, setters y 
 método toString(). Realizar un programa que cargue un ArrayList de clase Empleado
-con todos los empleados de la tabla. Mostrar a continuación todo el contenido del ArrayList.
+con todos los empleados de la tabla. Mostrar a continuación el contenido del ArrayList.
 autor: jose luis mosquera losada
 fecha: 5-06-2022 */
 package JLMLt18;
@@ -12,6 +12,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class JLMLt18e04 {
@@ -19,15 +20,13 @@ public class JLMLt18e04 {
     
     public static void main(String[] args) {
       
-       ArrayList <Empleado> plantilla = new ArrayList<>();
-
-        final String DDBB = "jdbc:mysql://localhost:3306/empresa?useUnicode=true&useJDBCCompliantTimezoneShif=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-        final String USER = "root";
-        final String PASSWORD = "pepe";
+        List<Empleado> plantilla = new ArrayList<>();
         final String CONSULTA = "SELECT * FROM empleado";
 
-        try ( Connection conexion = DriverManager.getConnection(DDBB, USER, PASSWORD);
-            PreparedStatement ps = conexion.prepareStatement(CONSULTA)){            
+        try (
+            Connection conexion = DriverManager.getConnection(Constantes.BDURL, Constantes.USER, Constantes.PASS);
+            PreparedStatement ps = conexion.prepareStatement(CONSULTA)
+        ){
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 Empleado empleado = new Empleado();
@@ -38,12 +37,10 @@ public class JLMLt18e04 {
                 plantilla.add(empleado);
             }
         } catch (SQLException e) {
-            System.out.println("Código de Error: " + e.getErrorCode()
-                    + "\nSLQState: " + e.getSQLState()
-                    + "\nMensaje: " + e.getMessage());
+            e.printStackTrace();
         }
-        for(Empleado e:plantilla){
-            System.out.println(e.toString());
+        for(Empleado empleado:plantilla){
+            System.out.println(empleado);
         }
         
     }

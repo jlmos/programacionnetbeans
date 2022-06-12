@@ -11,6 +11,7 @@ package JLMLt18;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -40,25 +41,25 @@ public class JLMLt18e11 {
                 switch (opcion) {
                     case 1:
                          try {
-                        Dao dao = Dao.getInstance();
-                        for (Empleado e : dao.findAll()) {
+                        EmpleadoDAO empleadoDAO = EmpleadoDAO.getInstance();
+                        for (Empleado e : empleadoDAO.findAll()) {
                             System.out.println(e.toString());
                         }
                     } catch (SQLException e) {
                         e.printStackTrace();
                     } catch (IOException ex) {
-                        Logger.getLogger(CGBt18e11.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(JLMLt18e11.class.getName()).log(Level.SEVERE, null, ex);
                     }
                     break;
 
                     case 2:
                         try {
-                        Dao dao = Dao.getInstance();
-                        dao.insert(new Empleado("19", "Ana PÃ©rez", "1999-05-19", "Analista", "2000"));
+                        EmpleadoDAO empleadoDAO = EmpleadoDAO.getInstance();
+                        empleadoDAO.insert(new Empleado(19, "Ana PÃ©rez", LocalDate.of(2019, 5, 19), "Analista", 2000));
                     } catch (SQLException e) {
                         e.printStackTrace();
                     } catch (IOException ex) {
-                        Logger.getLogger(CGBt18e11.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(JLMLt18e11.class.getName()).log(Level.SEVERE, null, ex);
                     }
                     break;
 
@@ -66,12 +67,12 @@ public class JLMLt18e11 {
                         System.out.println("Id del empleado a borrar: ");
                         dato = teclado.nextLine();
                         try {
-                            Dao dao = Dao.getInstance();
-                            dao.borrarEmpleado(dato);
+                            EmpleadoDAO empleadoDAO = EmpleadoDAO.getInstance();
+                            empleadoDAO.borrarEmpleado(dato);
                         } catch (SQLException e) {
                             e.printStackTrace();
                         } catch (IOException ex) {
-                            Logger.getLogger(CGBt18e11.class.getName()).log(Level.SEVERE, null, ex);
+                            Logger.getLogger(JLMLt18e11.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         break;
 
@@ -79,12 +80,12 @@ public class JLMLt18e11 {
                         System.out.println("Introduce el Id del empleado: ");
                         dato = teclado.nextLine();
                         try {
-                            Dao dao = Dao.getInstance();
-                            dao.buscarEmpleado(dato);
+                            EmpleadoDAO empleadoDAO = EmpleadoDAO.getInstance();
+                            empleadoDAO.buscarEmpleado(dato);
                         } catch (SQLException e) {
                             e.printStackTrace();
                         } catch (IOException ex) {
-                            Logger.getLogger(CGBt18e11.class.getName()).log(Level.SEVERE, null, ex);
+                            Logger.getLogger(JLMLt18e11.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         break;
                     case 0:
